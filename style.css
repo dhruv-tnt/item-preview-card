@@ -60,7 +60,7 @@ body {
 .container {
     background: var(--white);
     max-width:var(--mobile);
-    border-radius: 0.5em;
+    border-radius: 0.7em;
 
 }
 /* __________class section_____________ */
@@ -72,31 +72,33 @@ body {
 
 #img-d{
     display: block;
-    border-radius: 0.5em 0px 0px 0.5em;
+    border-radius: 0.7em 0px 0px 0.7em;
     width: 100%;
 }
 #img-m{
-    border-radius: 0.5em 0.5em 0px 0px;
+    border-radius: 0.7em 0.7em 0px 0px;
     width: 100%;
 }
 /* _____________section 2__________ */
 .section-2{
-    padding: 0px 1em;
+    margin-top: 1em;
+    padding: 0px 2em;
 }
 .section-2 h1{
     line-height: 1em;
 }
 .section-2>*{
-    margin: 1em 1px;
+    margin: 0.5em 0px;
 }
 .price{
     list-style-type: none;
+    margin: 1em 0px 1em 0px ;
 
 }
 li:first-child{
     font-family:var(--f2-family);
     color: var(--dark-cyan);
-    font-size: large;
+    font-size: x-large;
     font-weight: 700;
 }
 li:last-child{
@@ -104,22 +106,22 @@ li:last-child{
     color: var(--text-grey);
     font-weight: normal;
     text-decoration: line-through;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 button{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--f2-family);
     cursor: pointer;
     box-sizing: content-box;
     width: 100%;
-    padding: 0.5em 0px;
+    padding: 1em 0px;
     border: none;
     color: white;
     background: var(--dark-cyan);
     border-radius: 0.5em;
+    font-weight: bold;
 }
 button:hover{
     background: rgb(1, 73, 73);
@@ -132,7 +134,7 @@ button>img{
 
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
     .container{
         flex-direction: column;
         width: 21em;
