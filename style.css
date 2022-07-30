@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&display=swap');
+:root {
+    --mobile: 500px;
+    --desktop:1440px;
+    --dark-cyan: hsl(158, 36%, 37%);
+    --bg-cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --text-grey: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --text-size: 14px;
+    --f1-family: 'Montserrat', sans-serif;
+    --f2-family: 'Fraunces', serif;
+}
+
+
+
+/* __________________container________________ */
+#img-d,#img-m{
+    display: none;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/* ____________list_____________ */
+
+/* _____________start_______________ */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+    
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    flex-direction: column;
+    background: var(--bg-cream);
+    font-family: var(--f1-family);
+    font-size: var(--text-size);
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+
+
+/* _________container____________ */
+.container {
+    background: var(--white);
+    max-width:var(--mobile);
+    border-radius: 0.5em;
+
+}
+/* __________class section_____________ */
+.section-1,.section-2{
+    width: 50%;
+}
+
+/* ___________section 1__________ */
+
+#img-d{
+    display: block;
+    border-radius: 0.5em 0px 0px 0.5em;
+    width: 100%;
+}
+#img-m{
+    border-radius: 0.5em 0.5em 0px 0px;
+    width: 100%;
+}
+/* _____________section 2__________ */
+.section-2{
+    padding: 0px 1em;
+}
+.section-2 h1{
+    line-height: 1em;
+}
+.section-2>*{
+    margin: 1em 1px;
+}
+.price{
+    list-style-type: none;
+
+}
+li:first-child{
+    font-family:var(--f2-family);
+    color: var(--dark-cyan);
+    font-size: large;
+    font-weight: 700;
+}
+li:last-child{
+    margin-left: 1em;
+    color: var(--text-grey);
+    font-weight: normal;
+    text-decoration: line-through;
+    font-size: 10px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--f2-family);
+    cursor: pointer;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 0.5em 0px;
+    border: none;
+    color: white;
+    background: var(--dark-cyan);
+    border-radius: 0.5em;
+}
+button:hover{
+    background: rgb(1, 73, 73);
+}
+button>img{
+    height: 15px;
+    margin-right: 0.5em;
+}
+
+
+
+
+@media screen and (max-width:480px) {
+    .container{
+        flex-direction: column;
+        width: 21em;
+    }
+    .section-2{
+        margin: 1em 0px;
+    }
+    .section-2>*{
+        margin:0.5em 0px;
+    }
+    .section-2,.section-1{
+        
+        width: 100%;
+     }
+#img-d{
+    display: none;
+}
+ 
+#img-m{
+    display: block;
+    width: 100%;
+}   
+    
+}
+
+
+
+/* utility classes */
+.d-flex {
+    display: flex;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.h-center {
+    justify-content: center;
+}
